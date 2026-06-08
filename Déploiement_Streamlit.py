@@ -32,10 +32,10 @@ if choice == 'Saisir les paramètres directement':
 
     airline          = st.sidebar.selectbox('Compagnie aérienne', 
                            ['SpiceJet', 'AirAsia', 'Vistara', 'GO_FIRST', 'Indigo', 'Air_India'])
-    source_city      = st.sidebar.selectbox('Ville de départ', 
-                           ['Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Hyderabad', 'Chennai'])
-    destination_city = st.sidebar.selectbox('Ville d\'arrivée', 
-                           ['Mumbai', 'Bangalore', 'Kolkata', 'Hyderabad', 'Chennai', 'Delhi'])
+    cities = ['Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Hyderabad', 'Chennai']
+    source_city      = st.sidebar.selectbox('Ville de départ', cities)
+    destinations = [city for city in cities if city != source_city]                
+    destination_city = st.sidebar.selectbox('Ville d\'arrivée', destinations)
     departure_time   = st.sidebar.selectbox('Heure de départ', 
                            ['Early_Morning', 'Morning', 'Afternoon', 'Evening', 'Night', 'Late_Night'])
     arrival_time     = st.sidebar.selectbox('Heure d\'arrivée', 
