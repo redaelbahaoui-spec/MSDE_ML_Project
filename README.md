@@ -1,13 +1,13 @@
 # MSDE_ML_Project
 #En se basant sur l'historique des vols des compagnies aériennes indienne nous développons un modèle permettant de prédire les prix des billets d'avion en saisissant les informations impactant la fluctuation des tarifs sur le secteur aérien, à savoir : 
-  *Ville de départ 
-  *Ville d'arrivée
-  *Classe
-  *Compagnie aérienne
-  *heures de départ et d'arrivée
-  *Nombre d'escale 
-  *Durée de vol
-  *Nombre de jours avant la date de départ
+  Ville de départ 
+  Ville d'arrivée
+  Classe
+  Compagnie aérienne
+  heures de départ et d'arrivée
+  Nombre d'escale 
+  Durée de vol
+  Nombre de jours avant la date de départ
 
 Nous avons utilisé pour ce use case le modèle XGBoost après avoir réalisé un comparé les résultats stats de plusieurs autres modèles.
 
